@@ -1,1 +1,6 @@
-<p>inner works!</p>
+<p (click)="increment()">inner works! {{count()}}</p>
+<p>Double {{doubleCount()}}</p>
+<div (click)="loadItems()">Load</div>
+<div *ngFor="let item of items()">
+  <p>{{item.title}}</p>
+</div>
