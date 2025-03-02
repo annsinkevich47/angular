@@ -14,6 +14,8 @@ export class InnerComponent {
 
   count = signal(0);
   doubleCount = computed(() => this.count() * 2);
+
+  tripleCount = computed(() => this.doubleCount() * 3);
   items = signal<{ title: string }[]>([]);
 
   constructor(private http: HttpClient) {

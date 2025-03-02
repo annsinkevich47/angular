@@ -1,6 +1,8 @@
 <p (click)="increment()">inner works! {{count()}}</p>
 <p>Double {{doubleCount()}}</p>
+<p>Triple {{tripleCount()}}</p>
 <div (click)="loadItems()">Load</div>
 <div *ngFor="let item of items()">
   <p>{{item.title}}</p>
 </div>
+<div *ngIf="tripleCount() > 50">Now triple bigger then 50</div>
